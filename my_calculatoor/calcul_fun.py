@@ -21,3 +21,4 @@ def divide(lst):
         else:
             return "Error: Division by zero"
     return result
+    
