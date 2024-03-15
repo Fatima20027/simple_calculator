@@ -1,19 +1,19 @@
 def add(lst):
     return sum(lst)
 
-def subtract(lst):
+def sub(lst):
     result = lst[0]
     for num in lst[1:]:
         result -= num
     return result
 
-def multiply(lst):
+def mul(lst):
     result = 1    #we want to multiply all numbers
     for num in lst:
         result *= num
     return result
 
-def divide(lst):
+def div(lst):
     result = lst[0]
     for num in lst[1:]:
         if num != 0:

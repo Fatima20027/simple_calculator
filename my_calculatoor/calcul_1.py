@@ -1,4 +1,6 @@
-#from calcul_fun import add, sub, mul, div
+import sys
+sys.path.append('/home/tsuki/simple_calculator/my_calculatoor/')
+from funn import add, sub, mul, div
 while True:
     print("WELCOME TO MY CALCULATION")
     user = float(input("Enter a mathematical expression: "))
