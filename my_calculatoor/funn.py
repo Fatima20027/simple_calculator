@@ -1,24 +1,27 @@
-def add(lst):
-    return sum(lst)
+def add(list):
+    sum = 0
+    for i in range(len(list)):
+        sum = sum + list[i]
+    return sum
 
-def sub(lst):
-    result = lst[0]
-    for num in lst[1:]:
-        result -= num
-    return result
+def sub(list):
+    sum = 0
+    for i in range(len(list)):
+        sum = sum - list[i]
+    return sum
 
-def mul(lst):
-    result = 1    #we want to multiply all numbers
-    for num in lst:
-        result *= num
-    return result
+def mul(list):
+    sum = 1
+    for i in range(len(list)):
+        sum = sum * list[i]
+    return sum
 
-def div(lst):
-    result = lst[0]
-    for num in lst[1:]:
-        if num != 0:
-            result /= num
+def div(list):
+    sum = 0
+    for i in range(len(list)):
+        if i != 0:
+            sum = sum / list[i]
         else:
             return "Error: Division by zero"
-    return result
+    return sum
     
