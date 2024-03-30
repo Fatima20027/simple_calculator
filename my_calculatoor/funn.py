@@ -1,27 +1,27 @@
 def add(list):
-    sum = 0
+    num = 0
     for i in range(len(list)):
-        sum = sum + list[i]
-    return sum
+        num = num + list[i]
+    return num
 
 def sub(list):
-    sum = 0
+    num = 0
     for i in range(len(list)):
-        sum = sum - list[i]
-    return sum
+        num -= list[i]
+    return num
 
 def mul(list):
-    sum = 1
+    num = 1
     for i in range(len(list)):
-        sum = sum * list[i]
-    return sum
+        num = num * list[i]
+    return num
 
 def div(list):
-    sum = 0
+    num = 1
     for i in range(len(list)):
-        if i != 0:
-            sum = sum / list[i]
+        if list[i] != 0:
+            num = list[i] / num
         else:
             return "Error: Division by zero"
-    return sum
+    return num
     
